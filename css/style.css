@@ -1,0 +1,23 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: normal;
+	font-family: PTSans, sans-serif;
+}
+
+h1.page-title {
+	font-size: 30px;
+	line-height: 42px;
+	color: #000000;
+	font-weight: normal;
+	font-family: PTSans, sans-serif;
+}
+
+h2.main-page-section-title {
+	font-size: 30px;
+	line-height: 42px;
+	color: #000000;
+	font-weight: normal;
+	font-family: PTSans, sans-serif;
+}
