@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>Средства для ухода</title>
 	</head>
-	<body>
+
+	<body class="inner-page">
 		<header class="main-header">
 			<div class="wrapper">
 				<nav class="main-navigation">
@@ -15,15 +18,15 @@
 						</a>
 					</div>
 
-					<ul>
+					<ul class="site-navigation">
 						<li><a href="info.html">Информация</a></li>
 						<li><a href="news.html">Новости</a></li>
 						<li><a href="price.html">Прайс-лист</a></li>
-						<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 
-					<ul class="user-interface">
+					<ul class="user-navigation">
 						<li><a href="#">Вход</a></li>
 					</ul>
 				</nav>
@@ -50,32 +53,32 @@
 							<ul>
 								<li class="filter-option">
 									<input id="baxter-of-california" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" checked>
-									<label for="baxter-of-california">Baxter of california</label>
+									<label class="checkbox" for="baxter-of-california">Baxter of california</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="mr-natty" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty">
-									<label for="mr-natty">Mr Natty</label>
+									<label class="checkbox" for="mr-natty">Mr Natty</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="suavecito" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" checked>
-									<label for="suavecito">Suavecito</label>
+									<label class="checkbox" for="suavecito">Suavecito</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="malin-goetz" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz">
-									<label for="malin-goetz">Malin+Goetz</label>
+									<label class="checkbox" for="malin-goetz">Malin+Goetz</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="murrays" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays">
-									<label for="murrays">Murray's</label>
+									<label class="checkbox" for="murrays">Murray's</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="american-crew" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" checked>
-									<label for="american-crew">American crew</label>
+									<label class="checkbox" for="american-crew">American crew</label>
 								</li>								
 							</ul>
 						</fieldset>
@@ -86,17 +89,17 @@
 							<ul>
 								<li class="filter-option">
 									<input id="shaving" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving">
-									<label for="shaving">Бритвенные принадлежности</label>
+									<label class="radio" for="shaving">Бритвенные принадлежности</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="hair-care" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" checked>
-									<label for="hair-care">Средства для ухода</label>
+									<label class="radio" for="hair-care">Средства для ухода</label>
 								</li>
 
 								<li class="filter-option">
 									<input id="accessoires" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessoires">
-									<label for="accessoires">Аксессуары</label>
+									<label class="radio" for="accessoires">Аксессуары</label>
 								</li>
 							</ul>		
 						</fieldset>
@@ -127,7 +130,7 @@
 
 									<div class="item-price">
 										<span>2 900 &#8381;</span>
-										<button type="button">Купить</button>
+										<button class="btn" type="button">Купить</button>
 									</div>
 								</div>
 							</article>
@@ -151,7 +154,7 @@
 
 									<div class="item-price">
 										<span>750 &#8381;</span>
-										<button type="button">Купить</button>
+										<button class="btn" type="button">Купить</button>
 									</div>
 								</div>
 							</article>
@@ -175,7 +178,7 @@
 
 									<div class="item-price">
 										<span>290 &#8381;</span>
-										<button type="button">Купить</button>
+										<button class="btn" type="button">Купить</button>
 									</div>
 								</div>
 							</article>
@@ -199,7 +202,7 @@
 
 									<div class="item-price">
 										<span>500 &#8381;</span>
-										<button type="button">Купить</button>
+										<button class="btn" type="button">Купить</button>
 									</div>
 								</div>
 							</article>
@@ -223,7 +226,7 @@
 
 									<div class="item-price">
 										<span>300 &#8381;</span>
-										<button type="button">Купить</button>
+										<button class="btn" type="button">Купить</button>
 									</div>
 								</div>
 							</article>
@@ -247,7 +250,7 @@
 
 									<div class="item-price">
 										<span>3 900 &#8381;</span>
-										<button type="button">Купить</button>
+										<button class="btn" type="button">Купить</button>
 									</div>
 								</div>
 							</article>
@@ -268,54 +271,25 @@
 			<div class="wrapper">
 				<p class="footer-contacts">Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="map.html">Как нас найти?</a><br>
-				Телефон: +7 (812) 666-02-66</p>
+				<a class="address" href="map.html">Как нас найти?</a><br>
+				Телефон: <a href="tel: +78126660266">+7 (812) 666-02-66</a></p>
 
 				<div class="social">
 					<span>Давайте дружить!</span>
 
 					<ul>
-						<li><a class="btn social-btn" href="#">Вконтакте</a></li>
-						<li><a class="btn social-btn" href="#">Фэйсбук</a></li>
-						<li><a class="btn social-btn" href="#">Инстаграм</a></li>
+						<li><a class="footer-btn social-btn" href="#">Вконтакте</a></li>
+						<li><a class="footer-btn social-btn" href="#">Фэйсбук</a></li>
+						<li><a class="footer-btn social-btn" href="#">Инстаграм</a></li>
 					</ul>
 				</div>
 
 				<p class="footer-copyright">
 					<b>Разработано</b> 
 
-					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+					<a class="footer-btn" href="https://htmlacademy.ru">HTML Academy</a>
 				</p>
 			</div>
 		</footer>
-
-		<section class="modal modal-login">
-			<h2>Личный кабинет</h2>
-
-			<p>Введите, пожалуйста, свой логин и пароль</p>
-
-			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="form-row">
-					<label for="login-field">Логин</label>
-					<input id="login-field" class="login-icon-user" type="text" name="login" placeholder="Логин">
-				</div>
-
-				<div class="form-row">
-					<label for="password-field">Пароль</label>
-					<input id="password-field" class="login-icon-password" type="password" name="password" placeholder="Пароль">
-				</div>
-
-				<div  class="form-row">
-					<input id="remember-me" class="visually-hidden" type="checkbox" name="remember-me">
-					<label for="remember-me">Запомнить меня</label>
-
-					<a class="restore" href="#">Я забыл пароль</a>
-				</div>
-
-				<button class="btn" type="submit">Войти</button>
-			</form>
-
-			<button type="button modal-close"><span class="visually-hidden">close</span></button>
-		</section>
 	</body>
 </html>
