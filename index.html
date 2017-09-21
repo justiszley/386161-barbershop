@@ -3,36 +3,36 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Барбершоп</title>
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 	<body class="index-page">
 		<header class="main-header">
-			<div class="wrapper">
-				<nav class="main-navigation">
-					<div class="main-header-logo">
-						<img src="img/index-logo.svg" alt="Логотип барбершопа &#34;Бородинский&#34;" width="368" height="153">
-					</div>
+			<nav class="main-navigation">
+				<img class="main-header-logo" src="img/index-logo.svg" alt="Логотип барбершопа &#34;Бородинский&#34;" width="370" height="155">
 
-					<ul class="site-navigation">
-						<li><a href="info.html">Информация</a></li>
-						<li><a href="news.html">Новости</a></li>
-						<li><a href="price.html">Прайс-лист</a></li>
-						<li><a href="catalog.html">Магазин</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
+				<div class="main-navigation-container">
+					<div class="global-width main-navigation-wrapper">
+						<ul class="site-navigation">
+							<li><a href="info.html">Информация</a></li>
+							<li><a href="news.html">Новости</a></li>
+							<li><a href="price.html">Прайс-лист</a></li>
+							<li><a href="catalog.html">Магазин</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
 
-					<ul class="user-navigation">
-						<li><a href="#">Вход</a></li>
-					</ul>
-				</nav>
-			</div>
+						<ul class="user-navigation">
+							<li><a class="log-in" href="#">Вход</a></li>
+						</ul>
+					</div>							
+				</div>							
+			</nav>
 		</header>
 
 		<main class="container">
-			<div class="wrapper">
+			<div class="global-width">
 				<h1 class="page-title visually-hidden">Барбершоп &#34;Бородинский&#34;</h1>
 
 				<section class="features">
@@ -91,13 +91,13 @@
 					<section class="contacts">
 						<h2>Контактная информация</h2>
 
-						<p>Барбершоп &#171;Бородинский&#187;<br>
+						<p class="contacts-address">Барбершоп &#171;Бородинский&#187;<br>
 						Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 						Телефон: +7 (495) 666-02-66</p>
 
 						<h3>Время работы:</h3>
 
-						<p>Пн-пт: с 10:00 до 22:00<br>
+						<p class="contacts-time">Пн-пт: с 10:00 до 22:00<br>
 						Сб-вс: с 10:00 до 19:00</p>
 
 						<a class="btn contacts-btn" href="map.html">Как проехать</a>
@@ -138,27 +138,39 @@
 		</main>
 
 		<footer class="main-footer">
-			<div class="wrapper">
-				<p class="footer-contacts">Барбершоп «Бородинский»<br>
-				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a class="address" href="map.html">Как нас найти?</a><br>
-				Телефон: <a href="tel: +78126660266">+7 (812) 666-02-66</a></p>
+			<div class="global-width">
+				<div class="footer-wrapper">
+					<div class="contacts-info">
+						<p class="footer-contacts">Барбершоп «Бородинский»<br>
+						Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+						<a class="address" href="map.html">Как нас найти?</a><br>
+						Телефон: <a href="tel: +78126660266">+7 (812) 666-02-66</a></p>
+					</div>					
 
-				<div class="social">
-					<span>Давайте дружить!</span>
+					<div class="social">
+						<span>Давайте дружить!</span>
 
-					<ul>
-						<li><a class="footer-btn social-btn" href="#">Вконтакте</a></li>
-						<li><a class="footer-btn social-btn" href="#">Фэйсбук</a></li>
-						<li><a class="footer-btn social-btn" href="#">Инстаграм</a></li>
-					</ul>
-				</div>
+						<ul class="social-links">
+							<li>
+								<a class="footer-btn social-btn vk-btn" href="#"><span class="visually-hidden">Вконтакте</span></a>
+							</li>
 
-				<p class="footer-copyright">
-					<b>Разработано</b> 
+							<li>
+								<a class="footer-btn social-btn fb-btn" href="#"><span class="visually-hidden">Фэйсбук</span></a>
+							</li>
 
-					<a class="footer-btn" href="https://htmlacademy.ru">HTML Academy</a>
-				</p>
+							<li>
+								<a class="footer-btn social-btn inst-btn" href="#"><span class="visually-hidden">Инстаграм</span></a>
+							</li>
+						</ul>
+					</div>
+
+					<p class="footer-copyright">
+						<b>Разработано</b> 
+
+						<a class="footer-btn" href="https://htmlacademy.ru">HTML Academy</a>
+					</p>
+				</div>					
 			</div>
 		</footer>
 
@@ -169,17 +181,17 @@
 
 			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="form-row">
-					<label for="login-field">Логин</label>
+					<label class="visually-hidden" for="login-field">Логин</label>
 					<input id="login-field" class="login-icon-user" type="text" name="login" placeholder="Логин">
 				</div>
 
 				<div class="form-row">
-					<label for="password-field">Пароль</label>
+					<label class="visually-hidden" for="password-field">Пароль</label>
 					<input id="password-field" class="login-icon-password" type="password" name="password" placeholder="Пароль">
 				</div>
 
 				<div  class="form-row">
-					<input id="remember-me" class="visually-hidden" type="checkbox" name="remember-me">
+					<input class="visually-hidden" id="remember-me" type="checkbox" name="remember-me">
 					<label class="checkbox" for="remember-me">Запомнитe меня</label>
 
 					<a class="restore" href="#">Я забыл пароль!</a>

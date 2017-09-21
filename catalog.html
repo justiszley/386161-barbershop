@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Средства для ухода</title>
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -12,7 +12,7 @@
 		<header class="main-header">
 			<div class="wrapper">
 				<nav class="main-navigation">
-					<div class="main-header-logo">
+					<div>
 						<a href="index.html">
 							<img src="img/logo.svg" alt="Логотип барбершопа &#34;Бородинский&#34;" width="368" height="153">
 						</a>
@@ -268,27 +268,39 @@
 		</main>
 
 		<footer class="main-footer">
-			<div class="wrapper">
-				<p class="footer-contacts">Барбершоп «Бородинский»<br>
-				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a class="address" href="map.html">Как нас найти?</a><br>
-				Телефон: <a href="tel: +78126660266">+7 (812) 666-02-66</a></p>
+			<div class="global-width">
+				<div class="footer-wrapper">
+					<div class="contacts-info">
+						<p class="footer-contacts">Барбершоп «Бородинский»<br>
+						Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+						<a class="address" href="map.html">Как нас найти?</a><br>
+						Телефон: <a href="tel: +78126660266">+7 (812) 666-02-66</a></p>
+					</div>					
 
-				<div class="social">
-					<span>Давайте дружить!</span>
+					<div class="social">
+						<span>Давайте дружить!</span>
 
-					<ul>
-						<li><a class="footer-btn social-btn" href="#">Вконтакте</a></li>
-						<li><a class="footer-btn social-btn" href="#">Фэйсбук</a></li>
-						<li><a class="footer-btn social-btn" href="#">Инстаграм</a></li>
-					</ul>
-				</div>
+						<ul class="social-links">
+							<li>
+								<a class="footer-btn social-btn vk-btn" href="#"><span class="visually-hidden">Вконтакте</span></a>
+							</li>
 
-				<p class="footer-copyright">
-					<b>Разработано</b> 
+							<li>
+								<a class="footer-btn social-btn fb-btn" href="#"><span class="visually-hidden">Фэйсбук</span></a>
+							</li>
 
-					<a class="footer-btn" href="https://htmlacademy.ru">HTML Academy</a>
-				</p>
+							<li>
+								<a class="footer-btn social-btn inst-btn" href="#"><span class="visually-hidden">Инстаграм</span></a>
+							</li>
+						</ul>
+					</div>
+
+					<p class="footer-copyright">
+						<b>Разработано</b> 
+
+						<a class="footer-btn" href="https://htmlacademy.ru">HTML Academy</a>
+					</p>
+				</div>					
 			</div>
 		</footer>
 	</body>
